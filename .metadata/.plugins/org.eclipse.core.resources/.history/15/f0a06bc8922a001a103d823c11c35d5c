@@ -1,0 +1,29 @@
+package br.com.alura.validador;
+
+import br.com.caelum.stella.validation.CNPJValidator;
+import br.com.caelum.stella.validation.InvalidStateException;
+
+public class ValidatorCNPJ {
+	
+	/*
+	 * Valida CNPJ
+	 * @InvalidStateException
+	 */
+	
+	public static void main(String[] args) {
+		
+		String cnpj = "00428561000196";
+		
+		CNPJValidator validator = new CNPJValidator();
+		
+		try {
+			validator.assertValid(cnpj);
+			
+			System.out.println("CNPJ Válido!");
+		}catch (InvalidStateException e) {
+			e.printStackTrace();
+			
+			System.out.println("CNPJ Inválido!");
+		}
+	}
+}
