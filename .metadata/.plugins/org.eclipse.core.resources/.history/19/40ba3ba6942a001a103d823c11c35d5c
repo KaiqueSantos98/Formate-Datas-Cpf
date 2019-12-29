@@ -18,16 +18,15 @@ public class ValidatorCNPJ {
 		CNPJValidator validator = new CNPJValidator();
 		
 		CNPJFormatter cnpjFormatter = new CNPJFormatter();
-		String cnpjFormatador = cnpjFormatter.format(cnpj);
 		
 		try {
 			validator.assertValid(cnpj);
 			
-			System.out.println("CNPJ Válido! " + cnpjFormatador);
+			System.out.println("CNPJ Válido!" + cnpjFormatter.format(cnpj));
 		}catch (InvalidStateException e) {
 			e.printStackTrace();
 			
-			System.out.println("CNPJ Inválido! " + cnpjFormatador);
+			System.out.println("CNPJ Inválido!" + cnpjFormatter.format(cnpj));
 		}
 	}
 }

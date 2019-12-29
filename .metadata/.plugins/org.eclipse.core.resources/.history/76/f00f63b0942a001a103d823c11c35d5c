@@ -23,11 +23,11 @@ public class ValidatorCNPJ {
 		try {
 			validator.assertValid(cnpj);
 			
-			System.out.println("CNPJ Válido! " + cnpjFormatador);
+			System.out.println("CNPJ Válido!" + cnpjFormatador);
 		}catch (InvalidStateException e) {
 			e.printStackTrace();
 			
-			System.out.println("CNPJ Inválido! " + cnpjFormatador);
+			System.out.println("CNPJ Inválido!" + cnpjFormatador);
 		}
 	}
 }

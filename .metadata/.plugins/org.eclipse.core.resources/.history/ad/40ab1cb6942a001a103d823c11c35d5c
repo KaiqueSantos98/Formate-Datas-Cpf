@@ -23,11 +23,11 @@ public class ValidatorCPF {
 		try{
 			validator.assertValid(cpf);
 
-			System.out.println("CPF Valído! " + cpfFormatador);
+			System.out.println("CPF Valído!" + cpfFormatador);
 		}catch (InvalidStateException e) {
 			e.printStackTrace();
 			
-			System.out.println("CPF Inválido! " + cpfFormatador);
+			System.out.println("CPF Inválido!" + cpfFormatador);
 		}
 	}
 }

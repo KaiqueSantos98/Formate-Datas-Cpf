@@ -1,6 +1,5 @@
 package br.com.alura.validador;
 
-import br.com.caelum.stella.format.CPFFormatter;
 import br.com.caelum.stella.validation.CPFValidator;
 import br.com.caelum.stella.validation.InvalidStateException;
 
@@ -17,17 +16,14 @@ public class ValidatorCPF {
 		
 		CPFValidator validator = new CPFValidator();
 		
-		CPFFormatter cpfFormatter = new CPFFormatter();
-		String cpfFormatador = cpfFormatter.format(cpf);
-		
 		try{
 			validator.assertValid(cpf);
 
-			System.out.println("CPF Valído! " + cpfFormatador);
+			System.out.println("CPF Valído!");
 		}catch (InvalidStateException e) {
 			e.printStackTrace();
 			
-			System.out.println("CPF Inválido! " + cpfFormatador);
+			System.out.println("CPF Inválido!");
 		}
 	}
 }
