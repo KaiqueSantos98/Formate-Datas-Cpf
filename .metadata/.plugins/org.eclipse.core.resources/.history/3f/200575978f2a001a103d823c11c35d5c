@@ -1,0 +1,8 @@
+package br.com.alura.validador;
+
+public class ValidacaoDocumento {
+	
+	public static void main(String[] args) {
+		
+	}
+}
