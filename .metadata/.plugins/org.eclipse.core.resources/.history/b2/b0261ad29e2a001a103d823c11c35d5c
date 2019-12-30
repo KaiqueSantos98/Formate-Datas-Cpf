@@ -1,0 +1,11 @@
+package br.com.alura.cep;
+
+public class CEP {
+	
+	/*
+	 * Usar Client de CEP
+	 */
+	public static void main(String[] args) {
+		
+	}
+}

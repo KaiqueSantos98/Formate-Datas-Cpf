@@ -1,0 +1,15 @@
+package br.com.alura.cep;
+
+import com.github.gilbertotorrezan.viacep.se.ViaCEPClient;
+
+public class CEP {
+	
+	/*
+	 * Usar Client de CEP
+	 */
+	public static void main(String[] args) {
+		ViaCEPClient client = new ViaCEPClient();
+		
+		
+	}
+}

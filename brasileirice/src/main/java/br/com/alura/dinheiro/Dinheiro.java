@@ -31,6 +31,11 @@ x		 * Para trabalhar com diferentes tipos de moedas é necessário criar duas inst
 		
 		System.out.println(valorParcela);
 		
+		/*
+		 * API JavaMoney
+		 * @Porcentagem
+		 */
+		
 		MonetaryAmount desconto = valorParcela.with(MonetaryOperators.percent(10));
 		NumberValue descontoSemMoeda = desconto.getNumber();
 		
