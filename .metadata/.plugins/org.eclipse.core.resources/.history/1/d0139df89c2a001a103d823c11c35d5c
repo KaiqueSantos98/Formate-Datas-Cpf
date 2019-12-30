@@ -37,6 +37,5 @@ x		 * Para trabalhar com diferentes tipos de moedas é necessário criar duas inst
 		NumericToWordsConverter conversor = new NumericToWordsConverter(new FormatoDeReal());
 		String valorPorExtenso = conversor.toWords(descontoSemMoeda.doubleValue());
 		System.out.println(valorPorExtenso);
-		
 	}
 }
