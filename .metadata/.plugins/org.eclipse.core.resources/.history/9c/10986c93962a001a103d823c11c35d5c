@@ -1,0 +1,30 @@
+package br.com.alura.datas;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Data {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Pega a data atual do Sistema
+		 * @LocalDate
+		 * 
+		 * Formata a data
+		 * @DateTimeFormatter
+		 */
+		
+		LocalDate apenasData = LocalDate.now();
+		DateTimeFormatter formatadorApenasData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println(apenasData.format(formatadorApenasData));
+		
+		
+		LocalDateTime dataHora = LocalDateTime.now();
+		DateTimeFormatter formatadorDataHora = DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm");
+		System.out.println(dataHora.format(formatadorDataHora));
+		
+	}
+
+}

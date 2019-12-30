@@ -1,0 +1,20 @@
+package br.com.alura.datas;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class Data {
+
+	public static void main(String[] args) {
+		
+		// Apenas Data
+		LocalDate horaAtual = LocalDate.now();
+		DateTimeFormatter formatadorApenasData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println(horaAtual.format(formatadorApenasData));
+		
+		
+		
+		
+	}
+
+}
