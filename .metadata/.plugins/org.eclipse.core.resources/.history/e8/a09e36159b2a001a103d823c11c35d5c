@@ -1,0 +1,23 @@
+package br.com.alura.dinheiro;
+
+import javax.money.CurrencyUnit;
+import javax.money.Monetary;
+
+public class Dinheiro {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Criando a moeda
+		 * @Monetary.getCurrency
+		 * 
+		 * Criando valor
+		 * @
+		 */
+		
+		CurrencyUnit currency = Monetary.getCurrency("BRL");		
+		MonetaryAmount valorParcela = Money.off(75, currency);
+
+		
+	}
+}
